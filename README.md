@@ -18,9 +18,9 @@ Check out the live [demo](http://datastore.anito.de) using the preconfigured cre
 
 ||**username**|**password**|
 |:---------|:----------|:----------|
-|**SampleAdmin**|manager|manager|
-|**SampleUser**|user|user|
-|**SampleGuest**|guest|guest|
+|**SampleAdmin** *(all permissions)*|manager|manager|
+|**SampleUser** *(read details)*|user|user|
+|**SampleGuest** *(read overview)*|guest|guest|
 
 #Installation
 

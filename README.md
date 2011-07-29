@@ -12,15 +12,6 @@ Datastore was optimized to manage software product information like productname,
 
 Checkout the live [Datastore demo](http://datastore.anito.de)
 
-##Installation
-
-###Database
-
-create a new MySQL database 'datastore'
-
-execute datastore_default.sql found under app/config in order to create all tables required by the application
-the following users are preinstalled:
-
 ###Preconfigured Credentials
 
 ||username|password|
@@ -29,6 +20,14 @@ the following users are preinstalled:
 |SampleUser|user|user|
 |SampleGuest|guest|guest|
 
+##Installation
+
+###Database
+
+create a new MySQL database 'datastore'
+
+execute datastore_default.sql found under app/config in order to create all tables required by the application
+the following users are preinstalled:
 
 ###Directory permissions
 

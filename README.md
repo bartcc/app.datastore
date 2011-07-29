@@ -9,18 +9,15 @@ the following users are preinstalled:
 
 
 
-                USER        PASSWORD
-                |Left align|Right align|Center align|
-                |:---------|----------:|:----------:|
-                |This|This|This|
-                |column|column|column|
-                |will|will|will|
-                |be|be|be|
-                |left|right|center|
-                |aligned|aligned|aligned|
++USER        PASSWORD
+|Left align|Right align|Center align|
+|:---------|----------:|:----------:|
+|SampleAdmin|manager|manager|
+|SampleUser|user|user|
+|SampleGuest|guest|guest|
 
 
-SampleAdmin:    admin       admin
+:    admin       admin
 SampleManager:  manager     manager
 SampleUser:     user        user
 SampleGuest:    guest       guest

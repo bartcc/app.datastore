@@ -24,7 +24,7 @@ Check out the live [demo](http://datastore.anito.de) using the preconfigured cre
 
 #Installation
 
-1. Checkout the Repo (this is a fairly large stack to download ~7MB in size whereof the biggest part is due to a waste of image files waiting to get cleaned up)
+1. Checkout the Repo (this is a fairly large stack to download ~7MB in size whereof the biggest part is due to a waste of image files under webroot waiting to get cleaned up)
 2. Setup the database and directory permissions
 3. Configure Apache / IIS
 

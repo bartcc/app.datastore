@@ -40,3 +40,7 @@ The following directories must have read/write permissions for these users:
 1. core.php is configured to be used on Apache web server by default
 2. mod_rewrite must be enabled
 3. the home folder should be set to the root directory
+
+###Screenshot
+
+![Datastore](https://lh5.googleusercontent.com/-Qcaw9fGaaXs/TjLNnZCNjaI/AAAAAAAAADw/H3v7iszG-sk/s576/datastore.png)

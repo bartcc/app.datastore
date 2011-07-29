@@ -16,3 +16,5 @@ nbproject
 /uploads/*
 >>>>>>> cd
 app/config/database.php
+*.ai
+*.psd

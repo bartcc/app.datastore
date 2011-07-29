@@ -16,7 +16,4 @@ nbproject
 /uploads/*
 >>>>>>> cd
 app/config/database.php
-/app/webroot/img/*.ai
-/app/webroot/img/*.psd
-/app/webroot/css/img/*.ai
-/app/webroot/css/img/*.psd
+/app/webroot/assets

@@ -1,9 +1,16 @@
-#What is Datastore
+#Datastore
 
 Datastore is a CRUD SPA (Single Page Application) used with Prototype.js and CakePHP
 
+##What can it do
+
+Datastore was optimized to manage software product information like productname, vendor and associated serialnumbers 
 
 ##Installation instructions
+
+##Live Demo
+
+Checkout the live [Datastore demo](http://datastore.anito.de)
 
 ###Database
 

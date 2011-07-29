@@ -18,8 +18,8 @@ the following users are preinstalled:
 
 ##Directory permissions
 
-!the following directories must have read/write permissions for these users:
-IIS_WPG (IIS 6.0) or _www (Apache)
+The following directories must have read/write permissions for these users:
++IIS_WPG (IIS 6.0) or _www (Apache)+
 
 1. /app/tmp (CakePHP's internal tmp directory)
 2. /uploads (to enable the upload feature for icon images)

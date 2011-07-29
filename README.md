@@ -14,9 +14,7 @@ Datastore was optimized to manage software product information like productname,
 
 ##Live Demo
 
-Check out the live [demo](http://datastore.anito.de)
-
-using the preconfigured credentials below
+Check out the live [demo](http://datastore.anito.de) using the preconfigured credentials below:
 
 ||**username**|**password**|
 |:---------|:----------|:----------|

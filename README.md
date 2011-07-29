@@ -18,7 +18,7 @@ Check out the live [demo](http://datastore.anito.de)
 
 using the preconfigured credentials below
 
-||######username|#####password|
+||######username#####|#####password#####|
 |:---------|:----------|:----------|
 |SampleAdmin|manager|manager|
 |SampleUser|user|user|

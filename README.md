@@ -1,16 +1,20 @@
 #Datastore
 
-Datastore is a CRUD SPA (Single Page Application) used with Prototype.js and CakePHP
+Datastore is a CRUD SPA (Single Page Application) built on Prototype.js and CakePHP
 
 ##What can it do
 
 Datastore was optimized to manage software product information like productname, vendor and associated serialnumbers 
 
-##Installation instructions
+###Features
+
+1. ACL (Access Control List)
+2. Feedback on CRUD actions
+3. Assigning product avatars (GD Support must be enabled)
 
 ##Live Demo
 
-Checkout the live [Datastore demo](http://datastore.anito.de)
+Check out the live [demo](http://datastore.anito.de)
 
 ###Preconfigured Credentials
 
@@ -21,6 +25,10 @@ Checkout the live [Datastore demo](http://datastore.anito.de)
 |SampleGuest|guest|guest|
 
 ##Installation
+
+1. Checkout the Repo
+2. Setup the database and directory permissions
+3. Configure Apache / IIS
 
 ###Database
 

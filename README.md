@@ -8,9 +8,7 @@ execute datastore_default.sql found under app/config in order to create all tabl
 the following users are preinstalled:
 
 
-
-+USER        PASSWORD
-|Left align|Right align|Center align|
+||USER|PASSWORD|
 |:---------|----------:|:----------:|
 |SampleAdmin|manager|manager|
 |SampleUser|user|user|

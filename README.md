@@ -7,7 +7,7 @@ create a new MySQL database 'datastore'
 execute datastore_default.sql found under app/config in order to create all tables required by the application
 the following users are preinstalled:
 
-##Credentials
+##Preconfigured Credentials
 
 ||username|password|
 |:---------|:----------|:----------|

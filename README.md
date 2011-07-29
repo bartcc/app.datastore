@@ -30,7 +30,7 @@ Check out the live [demo](http://datastore.anito.de) using the preconfigured cre
 
 ##Database
 
-1. create a new MySQL database 'datastore'
+1. create a new MySQL database *datastore*
 2. execute datastore_default.sql on your MySQL Server1
 
 ##Directory permissions

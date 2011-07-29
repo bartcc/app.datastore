@@ -12,6 +12,8 @@ Datastore was optimized to manage software product information like productname,
 
 Checkout the live [Datastore demo](http://datastore.anito.de)
 
+##Installation
+
 ###Database
 
 create a new MySQL database 'datastore'

@@ -1,0 +1,82 @@
+div.tooltip {
+    color: #FFFFFF;
+    margin: 0 auto 0.5em 5px;
+    max-width: 650px;
+    min-width: 5em;
+    position: absolute;
+    z-index: 100;
+}
+div.tooltip div.content, div.tooltip div.t, div.tooltip div.b, div.tooltip div.a, div.tooltip div.b div {
+    background: url(img/tooltip_primary_lg.png) no-repeat scroll right top transparent;
+}
+div.tooltip div.content {
+    padding: 0 12px 0px 0;
+    position: relative;
+}
+div.tooltip div.t {
+    background-position: left top;
+    height: 100%;
+    left: 0;
+    margin-left: -12px;
+    position: absolute;
+    top: 0;
+    width: 12px;
+}
+div.tooltip div.b {
+    position: relative;
+    width: 38px;
+}
+div.tooltip div.b, div.tooltip div.b div {
+    font-size: 1px;
+    height: 22px;
+    top: 0
+}
+div.tooltip div.b {
+    background-position: right bottom;
+}
+div.tooltip div.a {
+    background-position: left bottom;
+    bottom: 16px;
+    height: 11px;
+    left: -10px;
+    position: relative;
+    width: 46px;
+}
+div.tooltip div.b div {
+    background-position: left bottom;
+    margin-left: -12px;
+    position: relative;
+    width: 12px;
+}
+div.tooltip div.hd, div.tooltip div.bd, div.tooltip div.ft {
+    position: relative;
+    padding: 3px 0 0;
+}
+div.tooltip div.bd p {
+    color: #FCFCFC;
+    font: 12px/16px 'Lusida Garande','Verdana',sans-serif;
+    opacity: 0.99;
+    text-align: center;
+    text-shadow: 0 -1px 0 #000000;
+}
+
+div.tooltip div.wrapper {
+    max-height: 100px;
+    overflow: auto;
+    position: static;
+}
+div.tooltip h1, div.tooltip p {
+    margin: 0;
+    padding: 0.1em 0;
+    text-transform: none
+}
+div.tooltip h1 {
+    padding-bottom: 0;
+}
+div.tooltip-wrapper {
+    position: relative
+}
+div.tooltip-wrapper>div.tooltip {
+    float: left;
+    top: -60px;
+}

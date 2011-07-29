@@ -1,0 +1,1 @@
+<?php echo $this->Text->truncate($product['Product']['title'], 40, array('ending' => '...', 'exact' => true))  . ' (' . $product['System']['name'] . ')' ?>

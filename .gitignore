@@ -13,6 +13,6 @@ nbproject
 /app/config/database.php
 /app/tmp/cache/models/*
 /app/tmp/cache/persistent/*
-uploads/*
+/uploads/*
 >>>>>>> cd
 app/config/database.php

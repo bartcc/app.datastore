@@ -30,10 +30,8 @@ Check out the live [demo](http://datastore.anito.de) using the preconfigured cre
 
 ##Database
 
-create a new MySQL database 'datastore'
-
-execute datastore_default.sql found under app/config in order to create all tables required by the application
-the following users are preinstalled:
+1. create a new MySQL database 'datastore'
+2. execute datastore_default.sql on your MySQL Server1
 
 ##Directory permissions
 

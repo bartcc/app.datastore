@@ -4,7 +4,7 @@ Datastore is a CRUD SPA (Single Page Application) built on Prototype.js and Cake
 
 ##What can it do
 
-Datastore was optimized to manage software product information like productname, vendor and associated serialnumbers 
+Datastore was optimized to manage software product information like product name, vendor and associated serial numbers 
 
 ##Features
 

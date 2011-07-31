@@ -9,7 +9,8 @@ nbproject
 /app/tmp/cache/views/*
 /app/tmp/sessions/*
 /app/tmp/tests/*
-/app/tmp/logs/*
+/app/tmp/logs/error.php
+/app/tmp/logs/debug.php
 /app/config/database.php
 /app/tmp/cache/models/*
 /app/tmp/cache/persistent/*

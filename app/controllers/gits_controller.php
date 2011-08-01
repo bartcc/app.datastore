@@ -30,6 +30,7 @@ class GitsController extends AppController {
     
     
     echo $git;
+    die(' ');
   }
   
   function git($action, $args = '') {

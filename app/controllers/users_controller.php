@@ -9,8 +9,8 @@ class UsersController extends AppController {
     $this->disableCache();
     $this->ajax_actions = array('login');
     // IMPORTANT: DON'T use Auth->allow(array(...))
-		  $this->Auth->allowedActions = array('refresh_header', 'retrieve_session_status', 'logout', 'login', 'login_ajax', 'autherror', 'login_ajax', 'build_acl', 'init_db');
-    //$this->Auth->allowedActions = array('refresh_header', 'retrieve_session_status', 'logout', 'login', 'login_ajax', 'autherror', 'login_ajax');
+//		$this->Auth->allowedActions = array('refresh_header', 'retrieve_session_status', 'logout', 'login', 'login_ajax', 'autherror', 'login_ajax', 'build_acl', 'init_db');
+    $this->Auth->allowedActions = array('refresh_header', 'retrieve_session_status', 'logout', 'login', 'login_ajax', 'autherror', 'login_ajax');
 
     if (!empty($this->data)) {
       // for the Auth from form

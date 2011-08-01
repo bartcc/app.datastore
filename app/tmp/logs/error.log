@@ -72,3 +72,203 @@ Aro: Array
 )
 
 Aco: App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]
+2011-08-01 06:10:52 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => manager
+            [name] => SampleManager
+            [created] => 2011-01-04 12:00:58
+            [modified] => 2011-07-31 18:39:49
+            [lastlogin] => 2011-07-31 18:39:49
+            [enabled] => 1
+            [group_id] => 2
+            [activeRecordId] => 4d3b77bb-d8a0-46f8-aeab-0abc291cc363
+            [clearquery] => true
+        )
+
+)
+
+Aco: controllers/App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]
+2011-08-01 06:10:52 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => manager
+            [name] => SampleManager
+            [created] => 2011-01-04 12:00:58
+            [modified] => 2011-07-31 18:39:49
+            [lastlogin] => 2011-07-31 18:39:49
+            [enabled] => 1
+            [group_id] => 2
+            [activeRecordId] => 4d3b77bb-d8a0-46f8-aeab-0abc291cc363
+            [clearquery] => true
+        )
+
+)
+
+Aco: App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]
+2011-08-01 06:11:14 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => manager
+            [name] => SampleManager
+            [created] => 2011-01-04 12:00:58
+            [modified] => 2011-07-31 18:39:49
+            [lastlogin] => 2011-07-31 18:39:49
+            [enabled] => 1
+            [group_id] => 2
+            [activeRecordId] => 4d3b77bb-d8a0-46f8-aeab-0abc291cc363
+            [clearquery] => true
+        )
+
+)
+
+Aco: controllers/App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]
+2011-08-01 06:11:14 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => manager
+            [name] => SampleManager
+            [created] => 2011-01-04 12:00:58
+            [modified] => 2011-07-31 18:39:49
+            [lastlogin] => 2011-07-31 18:39:49
+            [enabled] => 1
+            [group_id] => 2
+            [activeRecordId] => 4d3b77bb-d8a0-46f8-aeab-0abc291cc363
+            [clearquery] => true
+        )
+
+)
+
+Aco: App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]
+2011-08-01 06:11:22 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => manager
+            [name] => SampleManager
+            [created] => 2011-01-04 12:00:58
+            [modified] => 2011-07-31 18:39:49
+            [lastlogin] => 2011-07-31 18:39:49
+            [enabled] => 1
+            [group_id] => 2
+            [activeRecordId] => 4d3b77bb-d8a0-46f8-aeab-0abc291cc363
+            [clearquery] => true
+        )
+
+)
+
+Aco: controllers/App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]
+2011-08-01 06:11:22 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => manager
+            [name] => SampleManager
+            [created] => 2011-01-04 12:00:58
+            [modified] => 2011-07-31 18:39:49
+            [lastlogin] => 2011-07-31 18:39:49
+            [enabled] => 1
+            [group_id] => 2
+            [activeRecordId] => 4d3b77bb-d8a0-46f8-aeab-0abc291cc363
+            [clearquery] => true
+        )
+
+)
+
+Aco: App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]
+2011-08-01 06:11:58 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => manager
+            [name] => SampleManager
+            [created] => 2011-01-04 12:00:58
+            [modified] => 2011-07-31 18:39:49
+            [lastlogin] => 2011-07-31 18:39:49
+            [enabled] => 1
+            [group_id] => 2
+            [activeRecordId] => 4d3b77bb-d8a0-46f8-aeab-0abc291cc363
+            [clearquery] => true
+        )
+
+)
+
+Aco: controllers/App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]
+2011-08-01 06:11:58 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => manager
+            [name] => SampleManager
+            [created] => 2011-01-04 12:00:58
+            [modified] => 2011-07-31 18:39:49
+            [lastlogin] => 2011-07-31 18:39:49
+            [enabled] => 1
+            [group_id] => 2
+            [activeRecordId] => 4d3b77bb-d8a0-46f8-aeab-0abc291cc363
+            [clearquery] => true
+        )
+
+)
+
+Aco: App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]
+2011-08-01 06:12:17 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => manager
+            [name] => SampleManager
+            [created] => 2011-01-04 12:00:58
+            [modified] => 2011-07-31 18:39:49
+            [lastlogin] => 2011-07-31 18:39:49
+            [enabled] => 1
+            [group_id] => 2
+            [activeRecordId] => 4d3b77bb-d8a0-46f8-aeab-0abc291cc363
+            [clearquery] => true
+        )
+
+)
+
+Aco: controllers/App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]
+2011-08-01 06:12:17 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => manager
+            [name] => SampleManager
+            [created] => 2011-01-04 12:00:58
+            [modified] => 2011-07-31 18:39:49
+            [lastlogin] => 2011-07-31 18:39:49
+            [enabled] => 1
+            [group_id] => 2
+            [activeRecordId] => 4d3b77bb-d8a0-46f8-aeab-0abc291cc363
+            [clearquery] => true
+        )
+
+)
+
+Aco: App/webroot in [/Library/WebServer/Sites/app.datastore/app/cake/libs/controller/components/acl.php, line 273]

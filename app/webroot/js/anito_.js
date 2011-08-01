@@ -1746,10 +1746,10 @@ var Login = Class.create({
                     var input = $(this.trigger);
                     if(input.value == 'Login') {
                         value = 'Hide Login';
-                        title = 'Hides the Login Panel';
+                        title = 'Hide Login Panel';
                     } else {
                         value = 'Login';
-                        title = 'Shows the Login Panel'
+                        title = 'Show Login Panel'
                     }
                     input.value = value;
                     input.title = title;

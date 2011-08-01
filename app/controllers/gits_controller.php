@@ -8,6 +8,7 @@ class GitsController extends AppController {
 
   function beforeFilter() {
     $this->autoRender = FALSE;
+    $this->Auth->allowedActions = array('exec');
     parent::beforeFilter();
   }
 

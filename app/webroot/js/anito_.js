@@ -1744,11 +1744,11 @@ var Login = Class.create({
                     if (typeof cb === 'function') cb();
                     $(this.trigger).toggleClassName('down');
                     var input = $(this.trigger);
-                    if(input.value == 'Show Login') {
+                    if(input.value == 'Show Me Login') {
                         value = 'Hide Login';
                         title = 'Hides the Login Panel';
                     } else {
-                        value = 'Show Login';
+                        value = 'Show Me Login';
                         title = 'Shows the Login Panel'
                     }
                     input.value = value;

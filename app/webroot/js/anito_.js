@@ -1745,7 +1745,7 @@ var Login = Class.create({
                     $(this.trigger).toggleClassName('down');
                     var input = $(this.trigger);
                     if(input.value == 'Login') {
-                        value = 'Move Up Login';
+                        value = 'Move Up';
                         title = 'Hide Login Panel';
                     } else {
                         value = 'Login';

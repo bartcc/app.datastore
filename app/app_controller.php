@@ -33,89 +33,86 @@
  */
 class AppController extends Controller {
 
-    var $helpers = array('Text', 'Utilities', 'Session', 'Asset', 'Form', 'Js' => array('prototype'), 'Paginator', 'Ajax');
-    var $components = array('RequestHandler', 'Session', 'Auth', 'Acl', 'File', 'Cookie');
-    //var $beforeFilter = array('checkSession');
+  var $helpers = array('Text', 'Utilities', 'Session', 'Asset', 'Form', 'Js' => array('prototype'), 'Paginator', 'Ajax');
+  var $components = array('RequestHandler', 'Session', 'Auth', 'Acl', 'File', 'Cookie');
 
-    function beforeFilter() {
-        $this->Auth->autoRedirect = false;
-        $this->Auth->actionPath = 'controllers/';
-        $this->Auth->authorize = 'actions';
-        
-        if($this->RequestHandler->isAjax()) {
-            $this->Auth->loginAction = array('plugin' => null, 'controller' => 'users', 'action' => 'login_ajax');
-            $this->Auth->loginRedirect = array('plugin' => null, 'controller' => 'users', 'action' => 'login_ajax');
-            $this->Auth->logoutRedirect = array('plugin' => null, 'controller' => 'users', 'action' => 'logout');
-        } else {
-            $this->Auth->loginAction = array('plugin' => null, 'controller' => 'users', 'action' => 'login');
-            $this->Auth->loginRedirect = array('plugin' => null, 'controller' => 'products', 'action' => 'index');
-            $this->Auth->logoutRedirect = array('plugin' => null, 'controller' => 'users', 'action' => 'login');
-        }
+  //var $beforeFilter = array('checkSession');
 
-        if($this->action == 'retrieve_session_status') {
-            //$this->redirect(array('controller' => 'users', 'action' => 'logout'));
-        }
+  function beforeFilter() {
+    $this->Auth->autoRedirect = false;
+    $this->Auth->actionPath = 'controllers/';
+    $this->Auth->authorize = 'actions';
 
-        $check = $this->Acl->check($this->Auth->user(), $this->Auth->action());
-        if (!$check && !in_array($this->action, $this->Auth->allowedActions)) {
-            
-            $array1 = (!$this->Auth->user()) ?
-                array(
-                    'id' => LOGIN_ERROR_CODE,
-                    'message' => 'You must login for this request !'
-                    
-                    ) :
-                array(
-                    'id' => ACL_ERROR_CODE,
-                    'message' => 'Authorization has been refused for credentials of group<b> ' . $this->Session->read('Auth.Group.name') . '</b><br>(method: ' . $this->action . ')'
-                    );
-            $array2 = array('user' => $this->Auth->user('name'), 'action' => $this->action, 'group' => $this->Session->read('Auth.User.group.id'));
-            $status = array_merge($array1, $array2);
-            //$this->log($status, 5);
-            //debug($this->Session->read('Auth.Group.name'));
-            $this->Session->write('Acl.error.status', $status['id']);
-            $this->Session->write('Acl.error.message', $status['message']);
-            $this->Session->write('Acl.error.user', $status['user']);
-            $this->Session->write('Acl.error.action', $status['action']);
-            $this->Session->write('Acl.error.group', $status['group']);
-            if ($this->RequestHandler->isAjax()) {
-                $this->redirect('/users/autherror/', $status['id']);
-            }
-        } else {
-            $code = $this->Session->check('Auth.User') ? LOGIN_OK_CODE : LOGIN_ERROR_CODE;
-            $this->Session->write('Acl.error.status', $code);
-            $this->Session->write('Acl.error.group', $this->Session->read('Auth.User.group_id'));
-        }
-
-        if (!defined('MAX_SIZE')) {
-            define('MAX_SIZE', $this->File->returnBytes(ini_get('upload_max_filesize')));
-        }
-
+    if ($this->RequestHandler->isAjax()) {
+      $this->Auth->loginAction = array('plugin' => null, 'controller' => 'users', 'action' => 'login_ajax');
+      $this->Auth->loginRedirect = array('plugin' => null, 'controller' => 'users', 'action' => 'login_ajax');
+      $this->Auth->logoutRedirect = array('plugin' => null, 'controller' => 'users', 'action' => 'logout');
+    } else {
+      $this->Auth->loginAction = array('plugin' => null, 'controller' => 'users', 'action' => 'login');
+      $this->Auth->loginRedirect = array('plugin' => null, 'controller' => 'products', 'action' => 'index');
+      $this->Auth->logoutRedirect = array('plugin' => null, 'controller' => 'users', 'action' => 'login');
     }
 
-    function beforeRender() {
-        if ($this->RequestHandler->isAjax())
-            $this->layout = 'ajax';
-        if ($this->action != 'autherror') {
-            $check = $this->Acl->check($this->Auth->user(), $this->Auth->action());
-            $this->Session->write('Acl.error.check', $check);
-        }
-
-        
+    if ($this->action == 'retrieve_session_status') {
+      //$this->redirect(array('controller' => 'users', 'action' => 'logout'));
     }
 
-    ////
-    // Make sure ajax calls are actual ajax calls
-    ////
-    function verify_ajax() {
-        $this->layout = false;
+    $check = $this->Acl->check($this->Auth->user(), $this->Auth->action());
+    if (!$check && !in_array($this->action, $this->Auth->allowedActions)) {
 
-        if (AJAX_CHECK) {
-            if (!$this->RequestHandler->isAjax()) {
-                $this->redirect("/");
-                exit;
-            }
-        }
+      $array1 = (!$this->Auth->user()) ?
+              array(
+          'id' => LOGIN_ERROR_CODE,
+          'message' => 'You must login for this request !'
+              ) :
+              array(
+          'id' => ACL_ERROR_CODE,
+          'message' => 'Authorization has been refused for credentials of group<b> ' . $this->Session->read('Auth.Group.name') . '</b><br>(method: ' . $this->action . ')'
+              );
+      $array2 = array('user' => $this->Auth->user('name'), 'action' => $this->action, 'group' => $this->Session->read('Auth.User.group.id'));
+      $status = array_merge($array1, $array2);
+      //$this->log($status, 5);
+      //debug($this->Session->read('Auth.Group.name'));
+      $this->Session->write('Acl.error.status', $status['id']);
+      $this->Session->write('Acl.error.message', $status['message']);
+      $this->Session->write('Acl.error.user', $status['user']);
+      $this->Session->write('Acl.error.action', $status['action']);
+      $this->Session->write('Acl.error.group', $status['group']);
+      if ($this->RequestHandler->isAjax()) {
+        $this->redirect('/users/autherror/', $status['id']);
+      }
+    } else {
+      $code = $this->Session->check('Auth.User') ? LOGIN_OK_CODE : LOGIN_ERROR_CODE;
+      $this->Session->write('Acl.error.status', $code);
+      $this->Session->write('Acl.error.group', $this->Session->read('Auth.User.group_id'));
     }
+
+    if (!defined('MAX_SIZE')) {
+      define('MAX_SIZE', $this->File->returnBytes(ini_get('upload_max_filesize')));
+    }
+  }
+
+  function beforeRender() {
+    if ($this->RequestHandler->isAjax())
+      $this->layout = 'ajax';
+    if ($this->action != 'autherror') {
+      $check = $this->Acl->check($this->Auth->user(), $this->Auth->action());
+      $this->Session->write('Acl.error.check', $check);
+    }
+  }
+
+  ////
+  // Make sure ajax calls are actual ajax calls
+  ////
+  function verify_ajax() {
+    $this->layout = false;
+
+    if (AJAX_CHECK) {
+      if (!$this->RequestHandler->isAjax()) {
+        $this->redirect("/");
+        exit;
+      }
+    }
+  }
 
 }

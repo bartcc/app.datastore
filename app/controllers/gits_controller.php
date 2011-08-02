@@ -13,28 +13,30 @@ class GitsController extends AppController {
   }
 
   function exec() {
-    $allowed_actions = array('checkout', 'status', 'pull');
+    $allowed_actions = array('checkout', 'status', 'pull', 'show-branch');
     
     $action = array_splice($this->passedArgs, 0, 1);
     $action = $action[0];
     $args = implode(' ', $this->passedArgs);
     
-    if(!in_array($action, $allowed_actions))
-      return;
+    if(!in_array($action, $allowed_actions)) {
+      echo 'command not in list of allowed commands';
+      die(' ');
+    }
     
     //$func = $action;
     //if(method_exists($this, $func)) {
-      $git = $this->git($action, $args);
+      //$git = $this->git($action, $args);
       //$this->log($git, LOG_DEBUG);
     //}
     
-    
+    // execute command
+    $git = $this->git($action, $args);
     echo $git;
     die(' ');
   }
   
   function git($action, $args = '') {
-    //$this->log('callaing git ' . $action . ' ' . $args, LOG_DEBUG);
     $op = `git $action $args 2>&1`;
     return $op;
   }

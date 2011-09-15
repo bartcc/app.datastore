@@ -48,7 +48,6 @@ class AppController extends Controller {
       $this->Auth->loginRedirect = array('plugin' => null, 'controller' => 'users', 'action' => 'login_ajax');
       $this->Auth->logoutRedirect = array('plugin' => null, 'controller' => 'users', 'action' => 'logout');
     } else {
-      $this->Auth->loginAction = array('plugin' => null, 'controller' => 'users', 'action' => 'login');
       $this->Auth->loginRedirect = array('plugin' => null, 'controller' => 'products', 'action' => 'index');
       $this->Auth->logoutRedirect = array('plugin' => null, 'controller' => 'users', 'action' => 'login');
     }

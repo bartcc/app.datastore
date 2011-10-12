@@ -1,170 +1,170 @@
 @CHARSET "UTF-8";
 html, body, div, label {
-    color: white;
+  color: white;
 }
 .sprite {
-    position: absolute
+  position: absolute
 }
 input[type=text], input[type=password] {
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-    background: url(img/filter-middle-standard.jpg) repeat-x #F0F0F0 0 0;
-	border: 1px solid #FFF;
-    height: 32px;
-    width: 250px;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  background: url(img/filter-middle-standard.jpg) repeat-x #F0F0F0 0 0;
+  border: 1px solid #FFF;
+  height: 32px;
+  width: 250px;
 }
 /**/
 body.simple #footer {
-    bottom: 0
+  bottom: 0
 }
 div#main {
-    margin: 0;
-    width: 100%
+  margin: 0;
+  width: 100%
 }
 
 div.message {
-    display: inline;
-    font-size: 1em;
-    padding: 0;
+  display: inline;
+  font-size: 1em;
+  padding: 0;
 }
 div#loginform .message {
-    padding: 25px;
-	color: #555;
-    text-shadow: 0 1px 0 #FFFFFF;
+  padding: 25px;
+  color: #555;
+  text-shadow: 0 1px 0 #FFFFFF;
 }
 div.q-wrapper div.message, div#login div.message, div.q-wrapper .q-center, div.q-wrapper b {
-	color: #FFF;
-    text-shadow: -1px 0 0 #000;
+  color: #FFF;
+  text-shadow: -1px 0 0 #000;
 }
 h1>b {
-    color: #FFF;
+  color: #FFF;
 }
 div.search-right {
-    background: url(img/filter-right.png) no-repeat scroll 0 0 transparent
+  background: url(img/filter-right.png) no-repeat scroll 0 0 transparent
 }
 div.search-wrap input[type=submit].big {
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	-moz-border-radius-topleft: 0;
-	-moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -moz-border-radius-bottomleft: 0;
 }
 input[type=submit].primary_lg.big, button.primary_lg.big {
-	background: url(img/bttn_primary_lg_big.gif) no-repeat 0 -5px transparent;
-	-moz-border-radius: 7px;
-	-webkit-border-radius: 7px;
-    height: 45px;
-    padding: 0 10px 0;
+  background: url(img/bttn_primary_lg_big.gif) no-repeat 0 -5px transparent;
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  height: 45px;
+  padding: 0 10px 0;
 }
 div.fieldset input:hover, div.fieldset button:hover {
-    background-position: 0 -5px
+  background-position: 0 -5px
 }
 div.fieldset input#trigger-lock.pin.locked[type=submit] {
-    background-position: 0 -95px
+  background-position: 0 -95px
 }
 div.fieldset input#trigger-lock.pin[type=submit] {
-    background-position: 0 -50px
+  background-position: 0 -50px
 }
 input.primary_lg.big[type='submit'] {
-    margin-bottom: 1px;
-    margin-left: -7px;
-    border: 2px solid;
-	color: #FCFCFC;
-	text-shadow: -1px -1px 0 #134CAD;
-	font: 21px/22px 'Lusida Garande','Verdana',sans-serif;
-	text-align: center;
-	opacity: 0.99;
+  margin-bottom: 1px;
+  margin-left: -7px;
+  border: 2px solid;
+  color: #FCFCFC;
+  text-shadow: -1px -1px 0 #134CAD;
+  font: 21px/22px 'Lusida Garande','Verdana',sans-serif;
+  text-align: center;
+  opacity: 0.99;
 }
 div.fieldset input.big.window.br[type=submit], div.fieldset button.big.window.br {
-    -webkit-border-bottom-right-radius:6px;
-    -moz-border-radius-bottomright:6px;
-    border-left: medium none
+  -webkit-border-bottom-right-radius:6px;
+  -moz-border-radius-bottomright:6px;
+  border-left: medium none
 }
 div.fieldset input.big.window.bl[type=submit], div.fieldset button.big.window.bl {
-    -webkit-border-bottom-left-radius:6px;
-    -moz-border-radius-bottomleft:6px;
-    border-right: medium none
+  -webkit-border-bottom-left-radius:6px;
+  -moz-border-radius-bottomleft:6px;
+  border-right: medium none
 }
 input.big[type=submit] {
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    margin-right: 0;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  margin-right: 0;
 }
 div.fieldset input.big.window[type=submit], div.fieldset button.big.window {
-    -moz-border-radius: 0;
-    -webkit-border-radius: 0;
-    border-top: medium none;
-    font-size: 16px;
-    height: 35px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-top: medium none;
+  font-size: 16px;
+  height: 35px;
 }
 input[type='submit']:hover, input[type='reset']:hover, button.primary_lg:hover, button.primary_lg_del:hover, button.primary_lg_alt:hover {
-	background-position: 0 -40px;
-	cursor: pointer;
+  background-position: 0 -40px;
+  cursor: pointer;
 }
 input.primary_lg.disabled, button.primary_lg_del.disabled, button.primary_lg_alt.disabled, button.primary_lg_big.disabled {
-	background-position: 0 -54px;
-	cursor: default;
+  background-position: 0 -54px;
+  cursor: default;
 }
 input:focus {
-	outline-width: thick
+  outline-width: thick
 }
 div#loginform {
-    font: 24px/45px 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif;
-    text-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 2px;
-    margin: 0 auto;
-    width: 677px;
-    height: 200px;
-    border: 0px solid;
-    position: relative
+  font: 24px/45px 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 2px;
+  margin: 0 auto;
+  width: 677px;
+  height: 200px;
+  border: 0px solid;
+  position: relative
 }
 div#loginform .input {
-    background: url("img/bg_loginpage.png") no-repeat scroll -10px 26px transparent;
-    display: inline-block;
-    height: 100%;
-    padding: 0 28px 19px 17px;
-    position: relative;
-    right: -10px;
+  background: url("img/bg_loginpage.png") no-repeat scroll -10px 26px transparent;
+  display: inline-block;
+  height: 100%;
+  padding: 0 28px 19px 17px;
+  position: relative;
+  right: -10px;
 }
 div#loginform .input.submit {
-    background-image: none;
+  background-image: none;
 }
 div#loginform .input label {
-    display: block;
-    margin: 5px 0 0
+  display: block;
+  margin: 5px 0 0
 }
 div#loginform .input input[type=text], div#loginform .input input[type=password] {
-    padding-top: 5px;
-    padding-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .clearfix {
-    clear: both
+  clear: both
 }
 div.reminder {
-    font-size: 20px;
-    padding: 0px 10px;
-    margin-top: 10px;
-    position: absolute;
-    right: 20px;
-    z-index: 100
+  font-size: 20px;
+  padding: 0px 10px;
+  margin-top: 10px;
+  position: absolute;
+  right: 20px;
+  z-index: 100
 }
 div.reminder label {
-    text-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 2px;
-    padding-left: 30px;
-    position: relative;
-    z-index: 101
+  text-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 2px;
+  padding-left: 30px;
+  position: relative;
+  z-index: 101
 }
 div.reminder div.checkbox-box {
-    width: 30px;
-    height: 30px;
-    background: url(img/sprite.png) transparent 0 -270px no-repeat;
-    top: 8px;
-    left: 10px;
-    z-index: 100
+  width: 30px;
+  height: 30px;
+  background: url(img/sprite.png) transparent 0 -270px no-repeat;
+  top: 8px;
+  left: 10px;
+  z-index: 100
 }
 div.reminder div.checkbox-box.checked {
-    background-position: -60px -270px;
+  background-position: -60px -270px;
 }
 div.reminder input[type=checkbox]{
-    position: absolute;
-    left: -10000px;
-    top: -10000px
+  position: absolute;
+  left: -10000px;
+  top: -10000px
 }

@@ -37,7 +37,6 @@ class UsersController extends AppController {
 
   function beforeRender() {
     $this->layout = 'cake_default';
-    Configure::write('debug', 0);
     parent::beforeRender();
   }
 
@@ -47,7 +46,6 @@ class UsersController extends AppController {
   }
 
   function login_ajax() {
-    $this->log('login_ajax', LOG_DEBUG);
     $user = $this->Auth->user();
     if (!$user) {
       $this->Session->write('Acl.error.status', $this->Auth->user());
@@ -69,7 +67,6 @@ class UsersController extends AppController {
   }
 
   function login() {
-    $this->log('login_ajax', LOG_DEBUG);
     $this->set('title_for_layout', 'Login');
     if ($this->Auth->user() && !$this->params['isAjax']) {
       // delete old cookie from different user

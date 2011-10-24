@@ -109,7 +109,7 @@ input:focus {
 }
 div#loginform {
   font: 24px/45px 'Lucida Grande', 'Lucida Sans Unicode','Lucida Sans Regular', Verdana, sans-serif;
-  text-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 2px;
+  text-shadow: 0px -1px 0 rgba(0, 0, 0, 0.4);
   margin: 0 auto;
   width: 677px;
   height: 200px;
@@ -147,7 +147,7 @@ div.reminder {
   z-index: 100
 }
 div.reminder label {
-  text-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 2px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
   padding-left: 30px;
   position: relative;
   z-index: 101

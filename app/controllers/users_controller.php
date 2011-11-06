@@ -47,7 +47,6 @@ class UsersController extends AppController {
   }
 
   function login_ajax() {
-    $this->log('login_ajax', LOG_DEBUG);
     $user = $this->Auth->user();
     if (!$user) {
       $this->Session->write('Acl.error.status', $this->Auth->user());

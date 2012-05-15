@@ -239,6 +239,7 @@ class ProductsController extends AppController {
     $data = $this->Product->read(array('title', 'company', 'system_id', 'notes'), $id);
     unset($data['Product']['id']);
     $data['Product']['title'] .= ' [duplicated]';
+    $data['Product']['user_id'] = $this->Auth->user('id');
     $this->Product->create();
     if ($this->Product->save($data)) {
       $this->Session->write('Auth.User.activeRecordId', $this->Product->id);

@@ -67,7 +67,12 @@ class ProductsController extends AppController {
         array(
             'Product.title LIKE' => '%' . $query . '%',
             'Product.company LIKE' => '%' . $query . '%',
-            'System.name LIKE' => '%' . $query . '%'
+            'System.name LIKE' => '%' . $query . '%',
+            'System.name LIKE' => '%' . $query . '%',
+            
+        ), 'AND' =>
+        array(
+            'Product.user_id =' => $this->Auth->user('id')
         )
     );
 
@@ -181,6 +186,7 @@ class ProductsController extends AppController {
     $this->autoRender = false;
     if (!empty($this->data)) {
       $this->Session->write('Auth.User.productaddoption', $this->data['Product']['Use']);
+      $this->data['Product']['user_id'] = $this->Auth->user('id');
       $this->Product->create();
       if ($this->Product->save($this->data)) {
         $this->Session->setFlash(__('Product successfully added', true), 'flash_message');

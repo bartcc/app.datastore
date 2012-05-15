@@ -37,7 +37,6 @@ class UsersController extends AppController {
 
   function beforeRender() {
     $this->layout = 'cake_default';
-    Configure::write('debug', 0);
     parent::beforeRender();
   }
 
@@ -73,7 +72,7 @@ class UsersController extends AppController {
       // delete old cookie from different user
       $cookie = $this->Cookie->read('Auth.User');
       if (!is_null($cookie)) {
-        if ($this->Cookie->read('Auth.User.username' != $this->Auth->user('name'))) {
+        if ($this->Cookie->read('Auth.User.username' != $this->Auth->user('username'))) {
           $this->Cookie->delete('Auth.User');
         }
       }

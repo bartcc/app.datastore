@@ -40,7 +40,7 @@ class KodaksController extends AppController {
         $this->autoRender = false;
         $this->layout = false;
         $val = $this->params['named']['a'];
-        //$this->log($this->params, LOG_DEBUG);
+        $this->log($this->params, LOG_DEBUG);
         if (strpos($val, 'http://') !== false || substr($val, 0, 1) == '/') {
             header('Location: ' . $val);
             exit;

@@ -40,9 +40,10 @@ class UsersController extends AppController {
     parent::beforeRender();
   }
 
-  function hash() {
+  function hash($string = '') {
+    $this->autoRender = FALSE;
     App::import('Core', 'Security');
-    echo Security::hash('kakadax', null, true);
+    echo Security::hash($string, null, true);
   }
 
   function login_ajax() {

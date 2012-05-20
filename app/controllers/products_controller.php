@@ -279,7 +279,7 @@ class ProductsController extends AppController {
         if ($field && $this->Product->hasField($field)) {
           $array = $this->Product->read($field);
           $value = $array['Product'][$field];
-          $this->Session->setFlash(__('Field <b>' . $field . '</b> successfully saved', true), 'flash_message');
+          $this->Session->setFlash(__('<b>' . $field . '</b> successfully saved', true), 'flash_message');
         } elseif ($field == 'key') {
           if (!isset($this->data['newserial'])) {
             $value = $this->Product->Serial->field('key', array('id' => $id));
@@ -345,7 +345,7 @@ class ProductsController extends AppController {
         $this->Product->System->recursive = -1;
         $val = $this->Product->System->read('name', $sys_id);
         $value = $val['System']['name'];
-        $this->Session->setFlash(__('Field <b>system</b> successfully saved', true), 'flash_message');
+        $this->Session->setFlash(__('<b>system</b> successfully saved', true), 'flash_message');
       } else {
         $this->Session->setFlash(__('An error occurred. Could not save data', true), 'flash_message');
         $value = null;

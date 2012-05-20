@@ -22,13 +22,10 @@
 <table class="sortable" id="content-table" cellpadding="0" cellspacing="0" style="opacity: 1;">
 	<tr class="transparent">
 		<th style="width: 180px" class="rborder bborder"><?php echo $this->Paginator->sort('company'); ?></th>
-		<th style="" class="bborder"><?php echo $this->Paginator->sort('title'); ?></th>
-        <th style="width: 100px" class="rborder bborder">&nbsp;</th>
+		<th colspan="2" style="" class="bborder"><?php echo $this->Paginator->sort('title'); ?></th>
+  <th style="width: 100px" class="rborder bborder">&nbsp;</th>
 		<th style="width: 60px" class="rborder bborder"><?php echo $this->Paginator->sort('system_id'); ?></th>
-        <th style="width: 30px" class="rborder bborder"><?php echo $this->Paginator->sort('img', 'image'); ?></th>
-        <th style="width: 40px" class="rborder bborder">&nbsp;</th>
-        <th style="width: 40px" class="rborder bborder">&nbsp;</th>
-		<th style="width: 40px" class="actions bborder">&nbsp;</th>
+		<th style="width: 120px" colspan="3" class="actions bborder">actions</th>
 		<th style="display: none">&nbsp;</th>
 	</tr>
 	<?php

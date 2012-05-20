@@ -783,6 +783,7 @@ table.sortable td {
 }
 table.sortable td.icon{
   padding: 0 10px;
+  width: 40px;
 }
 table.sortable div.icon-inner {
   height: 34px;

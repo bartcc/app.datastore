@@ -440,6 +440,13 @@ div.dialogue-content {
   width: 400px;
 }
 div.dialogue-content div.bg {
+  -moz-border-radius: 6px;
+  -moz-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.6);
+  -webkit-border-radius: 6px;
+  -webkit-box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.6);
+  
   background: none repeat scroll 0 0 #4B4E51;
   float: left;
   padding: 20px 15px 15px 15px;

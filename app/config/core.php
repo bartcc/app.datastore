@@ -288,5 +288,9 @@
  *	));
  *
  */
+<<<<<<< HEAD
 	Cache::config('default', array('engine' => 'File'));
 //
+=======
+	Cache::config('default', array('engine' => 'File'));
+>>>>>>> 012c11405e909099fb12d1cca920914b3daff261

@@ -65,7 +65,7 @@
  *
  * And uncomment the App.baseUrl below:
  */
-	Configure::write('App.baseUrl', env('SCRIPT_NAME') . '?');
+	//Configure::write('App.baseUrl', env('SCRIPT_NAME') . '?');
 /**
  * Uncomment the define below to use CakePHP prefix routes.
  *
@@ -120,8 +120,8 @@
  * the cake shell command: cake schema run create Sessions
  *
  */
-    Configure::write('Session.save', 'cake');
-	//Configure::write('Session.save', 'my_session');
+    //Configure::write('Session.save', 'cake');
+	Configure::write('Session.save', 'my_session');
 /**
  * The model name to be used for the session model.
  *
@@ -288,4 +288,4 @@
  *	));
  *
  */
-	Cache::config('default', array('engine' => 'File'));
+ Cache::config('default', array('engine' => 'File'));

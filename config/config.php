@@ -7,7 +7,7 @@ $subdomainparts = explode('.', env('HTTP_HOST'));
 if(!defined('SUBDOMAIN') && count($subdomainparts) == 3) {
     define('SUBDOMAIN', $subdomainparts[0]);
 } else {
-    define('SUBDOMAIN', 'datastore');
+    define('SUBDOMAIN', 'data');
 }
 if(defined(SUBDOMAIN)) {
     $db = SUBDOMAIN;

@@ -59,7 +59,12 @@ define('DIR_REL_HOST', str_replace('/index.php?', '', BASE_URL));
 define('DIR_HOST', $protocol . preg_replace('/:80$/', '', env('HTTP_HOST')) . DIR_REL_HOST);
 $subdomainparts = explode('.', env('HTTP_HOST'));
 if (!defined('SUBDOMAIN')) {
-  define('SUBDOMAIN', $subdomainparts[0]);
+  define('SUBDOMAIN', 'datastore_' . $subdomainparts[0]);
+}
+if (!defined('TOPLEVEL')) {
+  $a = explode('.', DIR_HOST);
+  $last = count($a)-1;
+  define('TOPLEVEL', $a[$last]);
 }
 define('DATA_VERSION_FULL', '1.0.0.1000');
 $parts = explode('.', DATA_VERSION_FULL);

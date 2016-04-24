@@ -66,6 +66,11 @@ if (!defined('TOPLEVEL')) {
   $last = count($a)-1;
   define('TOPLEVEL', $a[$last]);
 }
+if (!defined('HOST')) {
+  $a = explode('.', DIR_HOST);
+  $domain = count($a)-2;
+  define('HOST', $a[$domain]);
+}
 define('DATA_VERSION_FULL', '1.0.0.1000');
 $parts = explode('.', DATA_VERSION_FULL);
 define('DATA_VERSION', $parts[0] . '.' . $parts[1] . '.' . $parts[2] . ' (Build ' . $parts[3] . ')');

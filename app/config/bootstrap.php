@@ -57,10 +57,19 @@ if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
 define('BASE_URL', Configure::read('App.baseUrl'));
 define('DIR_REL_HOST', str_replace('/index.php?', '', BASE_URL));
 define('DIR_HOST', $protocol . preg_replace('/:80$/', '', env('HTTP_HOST')) . DIR_REL_HOST);
+
 $subdomainparts = explode('.', env('HTTP_HOST'));
-if (!defined('SUBDOMAIN')) {
-  define('SUBDOMAIN', 'datastore_' . $subdomainparts[0]);
+if(!defined('PREFIX')) {
+    define('PREFIX', 'data');
 }
+if(!defined('SUBDOMAIN')) {
+  if(count($subdomainparts) == 3) {
+    define('SUBDOMAIN', PREFIX . '_' . $subdomainparts[0]);
+  } else {
+    define('SUBDOMAIN', PREFIX . '_' . 'data');
+  }
+}
+
 if (!defined('TOPLEVEL')) {
   $a = explode('.', DIR_HOST);
   $last = count($a)-1;
@@ -177,6 +186,6 @@ function computeSize($file, $new_w, $new_h, $scale) {
 }
 
 // Bring in customized configuration
-//if(require_once(ROOT . DS . 'config' . DS . 'config.php')) {
-    //define('DIR_DB', $db);
-//}
+if(require_once(ROOT . DS . 'config' . DS . 'config.php')) {
+    define('DIR_DB', $db);
+}

@@ -16,3 +16,4 @@ nbproject
 app/config/database.php
 /app/webroot/assets
 /.idea/
+mysql/*

@@ -13,13 +13,20 @@ class GitsController extends AppController {
   }
 
   function exec() {
-    $allowed_actions = array('checkout', 'status', 'pull', 'show-branch');
+    $allowed_commands = array('checkout', 'status', 'pull', 'show-branch');
     
     $action = array_splice($this->passedArgs, 0, 1);
-    $action = $action[0];
+    
+    if(!empty($action[0])) {
+        $action = $action[0];
+    } else {
+      echo 'no command found';
+      die(' ');
+    }
+    
     $args = implode(' ', $this->passedArgs);
     
-    if(!in_array($action, $allowed_actions)) {
+    if(!in_array($action, $allowed_commands)) {
       echo 'command not in list of allowed commands';
       die(' ');
     }

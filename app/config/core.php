@@ -49,6 +49,7 @@
  *    Configure::write('log', E_ALL ^ E_NOTICE);
  */
 	Configure::write('log', true);
+        error_reporting(E_ALL & ~E_STRICT & ~E_DEPRECATED);
 
 /**
  * Application wide charset encoding
@@ -229,6 +230,7 @@
  */
 	Configure::write('Acl.classname', 'DbAcl');
 	Configure::write('Acl.database', 'default');
+        
 /**
  * If you are on PHP 5.3 uncomment this line and correct your server timezone
  * to fix the date & time related errors.

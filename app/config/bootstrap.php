@@ -47,6 +47,9 @@
  * Inflector::rules('plural', array('rules' => array(), 'irregular' => array(), 'uninflected' => array()));
  *
  */
+
+
+
 define('WEB_URL', '/' . APP_DIR . '/' . WEBROOT_DIR);
 
 if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
@@ -187,5 +190,6 @@ function computeSize($file, $new_w, $new_h, $scale) {
 
 // Bring in customized configuration
 if(require_once(ROOT . DS . 'config' . DS . 'config.php')) {
-    define('DIR_DB', $db);
+//    define('DIR_DB', $db);
 }
+

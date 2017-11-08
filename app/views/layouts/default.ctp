@@ -22,10 +22,11 @@
     <head>
         <?php echo $this->Html->charset(); ?>
         <title>
+            <?php __('Data Storage: '); ?>
             <?php echo $title_for_layout; ?>
         </title>
         <?php
-        echo $this->Html->meta('icon');
+        echo $this->Html->meta('icon', '/favicon.ico?v=3');
         //echo $this->Html->css('cake_generic');
         echo $asset->css('main1');
         echo $asset->css('main2');

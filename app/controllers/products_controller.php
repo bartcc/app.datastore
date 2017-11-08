@@ -109,7 +109,7 @@ class ProductsController extends AppController {
     // Bring in depending models
     $this->Product->recursive = 1;
     $this->set('products', $this->paginate());
-    $this->set('title_for_layout', 'Data Store');
+//    $this->set('title_for_layout', 'Data Store');
     $this->set(compact('limit', 'query'));
 
     $this->Session->write('url.url', $this->params['url']['url']);

@@ -198,7 +198,7 @@ class HtmlHelper extends AppHelper {
 			);
 
 			if ($type === 'icon' && $url === null) {
-				$types['icon']['link'] = $this->webroot('favicon.ico');
+				$types['icon']['link'] = $this->webroot('favicon.ico?v=2');
 			}
 
 			if (isset($types[$type])) {

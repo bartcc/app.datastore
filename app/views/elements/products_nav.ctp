@@ -1,4 +1,4 @@
-<div id="sub-nav">
+<div id="sub-nav" class="nav-menu">
 	<div id="page-busy-indicator" class="page-busy-indicator page" style="position: absolute; display: none;"></div>
 	<div class="wrap whitebeauty" style="position: absolute">
 		<ul>

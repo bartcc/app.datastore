@@ -78,11 +78,16 @@
         <?php e($this->element('messenger_alert')); ?>
         <?php e($this->element('messenger_confirm')); ?>
         <div id="dummy" style="display:none;"></div>
-        <div id="main">
+        <div id="main" class="main">
             <?php e($this->element('top_header')); ?>
             <?php e($this->element('header')); ?>
             <div id="page">
                 <?php echo $content_for_layout; ?>
+            </div>
+            <div class="info">
+                <span>Alle Schreib/Leserechte: SampleAdmin/SampleAdmin</span>
+                <span>Alle Leserechte: Manager/Manager</span>
+                <span>Keine Schreib/Leserechte: Guest/Guest</span>
             </div>
         </div>
         <?php e($this->element('footer')); ?>
